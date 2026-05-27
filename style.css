@@ -1,0 +1,110 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:black;
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+h1{
+  color:cyan;
+  margin-top:20px;
+  text-shadow:0 0 20px cyan;
+  font-size:45px;
+}
+
+#searchBar{
+  padding:15px;
+  width:80%;
+  max-width:500px;
+  border:none;
+  border-radius:20px;
+  margin:20px;
+  background:#111;
+  color:white;
+  font-size:18px;
+  border:2px solid cyan;
+  box-shadow:0 0 20px cyan;
+}
+
+.table{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.element{
+  background:#111;
+  border:2px solid cyan;
+  border-radius:20px;
+  padding:20px;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow:0 0 20px cyan;
+}
+
+.element:hover{
+  transform:scale(1.1);
+}
+
+.element span{
+  font-size:14px;
+}
+
+.element h2{
+  font-size:40px;
+  margin:10px 0;
+}
+
+.metal{
+  border-color:#00bfff;
+  box-shadow:0 0 20px #00bfff;
+}
+
+.nonmetal{
+  border-color:#00ff99;
+  box-shadow:0 0 20px #00ff99;
+}
+
+.noble{
+  border-color:#ff00ff;
+  box-shadow:0 0 20px #ff00ff;
+}
+
+.popup{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:#111;
+  padding:30px;
+  border-radius:20px;
+  border:2px solid cyan;
+  display:none;
+  z-index:100;
+  width:80%;
+  max-width:400px;
+  box-shadow:0 0 30px cyan;
+}
+
+.popup h2{
+  color:cyan;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  background:cyan;
+  color:black;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+#atomCanvas{
+  width:100%;
+  height:300px;
+}
